@@ -1,0 +1,179 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Variables */
+:root {
+  --primary-gold: #fbbc05;
+  --primary-gray: #f2f3f5;
+  --primary-dark-gray: #949597;
+  --light-white: #f2f3f3; 
+  --error: #e7195a;
+}
+
+/* Body */
+body {
+  background: var(--light-white);
+  margin: 0;
+  font-family: "Roboto";
+}
+
+/* Global Styles */
+*:focus { 
+  box-shadow: none !important;
+}
+
+/* Header Bar */
+.header-bar {
+  border-bottom: solid 2px var(--primary-gray);
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+}
+
+.header-bar img {
+  height: 35px;
+}
+
+.header-bar .search-bar {
+  background-color: var(--primary-gray);
+}
+
+/* Note Form */
+.note-form .title {
+  border: none;
+  padding: 0 10px;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.note-form .title:focus {
+  background-color: transparent;
+}
+
+.note-form .body {
+  border: none;
+  padding: 10px;
+  height: 200px;
+  resize: none;
+  background-color: transparent;
+}
+
+.note-form .body:focus {
+  background-color: transparent;
+}
+
+.note-form .pin {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+}
+
+.note-form .pin:hover {
+  cursor: pointer;
+}
+
+.note-form .pin img {
+  height: 30px;
+}
+
+.note-form .card-icons { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-form .card-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colorInput input[type="color"] {
+  display: none;
+}
+
+.colorInput {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+}
+
+.save {
+  background-color: transparent !important;
+  color: black !important;
+  border: var(--primary-gold) !important;
+}
+
+.save:hover {
+  background-color: var(--primary-gray) !important;
+  color: black !important;
+  border: var(--primary-gray) !important;
+}
+
+/* Tesseract Input */
+.imageFileInput input[type="file"] {
+  display: none;
+}
+
+.imageFileInput {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Subsection */
+.subsection {
+  margin: 5% 0%;
+}
+
+.subsection > .title {
+  color: var(--primary-dark-gray);
+  font-weight: 500;
+  font-size: .8rem;
+  margin-bottom: 10px;
+}
+
+/* Note */
+.note {
+  margin-bottom: 10px;
+}
+.note:hover {
+  box-shadow: 0px 0px 3px black;
+}
+
+.note .body { 
+  border-radius: inherit;
+}
+
+.note .footer {
+  display: none;
+}
+
+.login-container {
+  border: 1px solid var(--primary-gray);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-gold);
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
