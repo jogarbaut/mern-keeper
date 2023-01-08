@@ -14,6 +14,7 @@ function App() {
     <>
       <BrowserRouter>
       <HeaderBar />
+      <div className="pages">
         <Routes>
           <Route
             path="/"
@@ -23,11 +24,12 @@ function App() {
             path="/login"
             element={!user ? <Login /> : <Navigate to="/" />}
           />
-          <Route
+          {/* <Route
             path="/signup"
             element={!user ? <Signup /> : <Navigate to="/" />}
-          />
+          /> */}
         </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </>

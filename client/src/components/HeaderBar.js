@@ -82,16 +82,16 @@ const HeaderBar = () => {
           ) : (
             <>
               <Navbar.Collapse className="justify-content-end">
-                <Nav.Link href="/login">
+                {/* <Nav.Link href="/login">
                   <Button className="login-btn" variant="primary">
                     Demo Login
                   </Button>
-                </Nav.Link>
-                <Nav.Link href="/signup">
+                </Nav.Link> */}
+                {/* <Nav.Link href="/signup">
                   <Button className="signup-btn" variant="secondary">
                     Sign Up
                   </Button>
-                </Nav.Link>
+                </Nav.Link> */}
                 <InstructionsModal />
               </Navbar.Collapse>
             </>

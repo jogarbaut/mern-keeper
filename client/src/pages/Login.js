@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLogin } from "../hooks/useLogin";
 
 import Button from "react-bootstrap/Button";
@@ -15,38 +15,43 @@ const Login = () => {
     await login(email, password);
   };
 
+  // Demo login setup
+  useEffect(() => {
+    setEmail("demo-user@demo-email.com");
+    setPassword("Demo-Password123?");
+  }, []);
+
   return (
     <>
       <Container className="mt-3 login-container">
         <Form className="login" onSubmit={handleSubmit}>
-          <h4>Demo Login</h4>
-          <Form.Group className="mb-3">
+          <div className="login-title">Login</div>
+          <Form.Group className="mb-3 login-content">
             <Form.Label>Email:</Form.Label>
             <Form.Control
               type="email"
               placeholder="Enter email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              disabled
             />
-            <Form.Text muted>
-              Demo email is: <strong>demo-user@demo-email.com</strong>
-            </Form.Text>
           </Form.Group>
 
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-3 login-content">
             <Form.Label>Password:</Form.Label>
             <Form.Control
               type="password"
               placeholder="Enter password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
+              disabled
             />
-            <Form.Text muted>
-              Demo password is: <strong>Demo-Password123?</strong>
-            </Form.Text>
           </Form.Group>
-
-          <Button type="submit">Login</Button>
+          <div className="d-grid">
+            <Button variant="primary" type="submit" className="login-button">
+              Demo Login
+            </Button>
+          </div>
         </Form>
       </Container>
     </>

@@ -6,8 +6,7 @@
   --primary-gold: #fbbc05;
   --primary-gray: #f2f3f5;
   --primary-dark-gray: #949597;
-  --light-white: #f2f3f3; 
-  --error: #e7195a;
+  --light-white: #f2f3f3;
 }
 
 /* Body */
@@ -15,6 +14,14 @@ body {
   background: var(--light-white);
   margin: 0;
   font-family: "Roboto";
+}
+
+/* Pages */
+.pages {
+  max-width: 1400px;
+  min-width: 480px;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 /* Global Styles */
@@ -55,6 +62,7 @@ body {
   height: 200px;
   resize: none;
   background-color: transparent;
+  white-space: pre-wrap;
 }
 
 .note-form .body:focus {
@@ -153,17 +161,51 @@ body {
 
 .note .body { 
   border-radius: inherit;
+  white-space: pre-wrap;
 }
 
 .note .footer {
   display: none;
 }
 
+/* Login */
+
 .login-container {
-  border: 1px solid var(--primary-gray);
-  border-radius: 5px;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
 }
+
+.login {
+  width: 420px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+}
+
+.login-content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  color: black;
+  font-weight: 700;
+}
+
+.login-button {
+  text-align: center;
+  margin: auto;
+}
+
+/* Footer */
 
 .footer {
   position: fixed;
@@ -176,4 +218,43 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Instructions Modal */
+.instructions-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.instructions-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.instructions-body {
+  font-weight: 300;
+}
+
+.instructions-body > .subsection {
+  font-weight: 500;
+  margin: 0;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 75%;
+}
+
+.credits {
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
