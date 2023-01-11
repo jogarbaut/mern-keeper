@@ -67,14 +67,15 @@ const HeaderBar = () => {
                   value={query}
                 />
               </Form>
-              <div>
+              <div className="">
               <Button
-                className="logout-btn"
+                className="logout-btn mb-3 mt-3"
                 variant="danger"
                 onClick={handleLogout}
               >
                 Log Out
               </Button>
+              <span>     </span>
               <InstructionsModal />
               </div>
 

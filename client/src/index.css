@@ -19,7 +19,7 @@ body {
 /* Pages */
 .pages {
   max-width: 1400px;
-  min-width: 480px;
+  /* min-width: 480px; */
   margin: 0 auto;
   padding-bottom: 100px;
 }

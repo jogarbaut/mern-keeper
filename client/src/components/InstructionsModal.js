@@ -10,7 +10,7 @@ const InstructionsModal = () => {
 
   return (
     <>
-      <Button variant="warning" onClick={handleShow} className="ms-2">
+      <Button variant="warning" onClick={handleShow}>
         Demo Instructions
       </Button>
 
